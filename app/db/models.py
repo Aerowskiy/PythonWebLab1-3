@@ -21,7 +21,7 @@ class Users(TimestampMixin, Base):
     is_superuser = Column(Boolean, default=False)
 
 
-class Orders(TimestampMixin, Base):
+class Deals(TimestampMixin, Base):
     __tablename__ = "orders"
 
     id = Column(Integer, primary_key=True, autoincrement=True)

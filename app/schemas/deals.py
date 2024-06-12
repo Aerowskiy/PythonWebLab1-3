@@ -3,18 +3,18 @@ from typing import Optional
 from pydantic import BaseModel
 
 
-class OrderBase(BaseModel):
+class DealBase(BaseModel):
     title: str
     description: str
     customer_id: int
     performer_id: int
 
 
-class OrderCreate(OrderBase):
+class DealCreate(DealBase):
     pass
 
 
-class Order(OrderBase):
+class Deal(DealBase):
     id: int
     completed: bool
 
